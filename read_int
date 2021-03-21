@@ -1,0 +1,16 @@
+# setting function
+def readInt(num):
+  """
+  Certificate input is a int number.
+  """
+  while True:
+    n = str(input('Type a number: '))
+    if n.isnumeric():
+      break
+    else:
+      print(f'\033[31mERROR! Type a valid int number.\033[m')
+  return print(f'You got it! You have typed the number {n}')
+
+
+# Main script
+readInt('Type a n')
